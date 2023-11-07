@@ -1,3 +1,5 @@
+import recentPhoto from "../assets/recent-photo.png";
+
 export default function About() {
   return (
     <div style={containerStyle}>
@@ -9,6 +11,7 @@ export default function About() {
         up even more skills in the future. Best wishes from me and thank you for
         visiting my page!
       </p>
+      <img src={recentPhoto} alt="Photo of me" style={imageStyle} />
     </div>
   );
 }
@@ -19,4 +22,9 @@ const containerStyle = {
   background: "#f5f5f5",
   float: "left",
   marginTop: "20px",
+};
+
+const imageStyle = {
+  width: "75%",
+  borderRadius: "25%",
 };
