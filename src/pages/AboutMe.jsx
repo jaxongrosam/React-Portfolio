@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div>
+    <div style={containerStyle}>
       <h1>About Me</h1>
       <p>
         Hi! My name is Jaxon Grosam, and I'm about to finish a coding bootcamp.
@@ -12,3 +12,11 @@ export default function About() {
     </div>
   );
 }
+
+const containerStyle = {
+  width: "500px",
+  padding: "30px",
+  background: "#f5f5f5",
+  float: "left",
+  marginTop: "20px",
+};
